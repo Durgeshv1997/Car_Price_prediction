@@ -43,7 +43,7 @@ def app(df):
         score, pred_price, rsquare_score, mae, msle, rmse = predict(df, feature_list)
 
         # Display all the values.
-        st.success(f"The predicted price of the car: ${int(pred_price):,}")
+        st.success(f"The predicted price of the car: ₹{int(pred_price):,}")
         st.info(f"Accuracy score of this model is: {score:.2%}")
         st.info(f"R-squared score of this model is: {rsquare_score:.2}")
         st.info(f"Mean absolute error of this model is: {mae:.3f}")
